@@ -16,7 +16,7 @@ public class EsemenyekOsszevonas extends javax.swing.JFrame {
      * Creates new form EsemenyekOsszevonas
      */
     public EsemenyekOsszevonas() {
-        jTextField1.setText(osszeg + " Ft");
+        frissites();
         osszeg=0;
         initComponents();
         
@@ -106,8 +106,12 @@ public class EsemenyekOsszevonas extends javax.swing.JFrame {
             osszeg -=200;
         }
         
-        jTextField1.setText(osszeg + " Ft");
+        frissites();
     }//GEN-LAST:event_osszesito
+
+    private void frissites() {
+        jTextField1.setText(osszeg + " Ft");
+    }
 
     /**
      * @param args the command line arguments

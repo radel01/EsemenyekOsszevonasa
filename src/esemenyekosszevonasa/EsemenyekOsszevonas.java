@@ -16,7 +16,10 @@ public class EsemenyekOsszevonas extends javax.swing.JFrame {
      * Creates new form EsemenyekOsszevonas
      */
     public EsemenyekOsszevonas() {
+        jTextField1.setText(osszeg + " Ft");
+        osszeg=0;
         initComponents();
+        
     }
 
     /**
